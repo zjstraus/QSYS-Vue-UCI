@@ -90,7 +90,6 @@ export default {
   },
   data() {
     return {
-      ServerAddress: '192.168.201.10:8082',
       Theme: "material",
       Themes: [
           "material",

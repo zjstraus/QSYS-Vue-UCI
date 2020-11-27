@@ -50,7 +50,7 @@ export default new Vuex.Store({
             context.commit('clearInit')
             let designData = {}
             try {
-                let resp = await fetch(`http://192.168.201.10:8082/designData.json`)
+                let resp = await fetch(`/designData.json`)
                 designData = await resp.json()
             } catch (err) {
                 context.commit('requireInit')
