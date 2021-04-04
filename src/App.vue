@@ -49,8 +49,8 @@
         </div>
         <div id="zones">
           <ZoneCard cardlabel="Main" :theme=Theme :sliders=MainZoneControls></ZoneCard>
-          <ZoneCard cardlabel="Kitchen" :theme=Theme :sliders=KitchenZoneControls></ZoneCard>
-          <ZoneCard cardlabel="Balcony" :theme=Theme :sliders=BalconyZoneControls></ZoneCard>
+<!--          <ZoneCard cardlabel="Kitchen" :theme=Theme :sliders=KitchenZoneControls></ZoneCard>-->
+<!--          <ZoneCard cardlabel="Balcony" :theme=Theme :sliders=BalconyZoneControls></ZoneCard>-->
         </div>
       </div>
 
@@ -101,24 +101,44 @@ export default {
       MainZoneControls: [
         {
           label: "TV",
-          control: "LivingRoomMixTV"
+          control: "LivingRoomInputLevelTV",
+          level: "LivingRoomInputMeterTV"
         },
         {
           label: "XLR",
-          control: "LivingRoomMixXLR"
+          control: "LivingRoomInputLevelXLR",
+          level: "LivingRoomInputMeterXLR"
         },
         {
           label: "TRS",
-          control: "LivingRoomMixTRS"
+          control: "LivingRoomInputLevelTRS",
+          level: "LivingRoomInputMeterTRS"
         },
         {
-          label: "M32",
-          control: "LivingRoomMixM32"
+          label: "Phono",
+          control: "LivingRoomInputLevelPhono",
+          level: "LivingRoomInputMeterPhono"
         },
         {
-          label: "BGM",
-          control: "LivingRoomMixBGM"
-        }
+          label: "RCA",
+          control: "LivingRoomInputLevelRCA",
+          level: "LivingRoomInputMeterRCA"
+        },
+        {
+          label: "Dante Aux",
+          control: "LivingRoomInputLevelDanteAux",
+          level: "LivingRoomInputMeterDanteAux"
+        },
+        {
+          label: "USB",
+          control: "LivingRoomInputLevelRackUSB",
+          level: "LivingRoomInputMeterRackUSB"
+        },
+        {
+          label: "Spotify",
+          control: "LivingRoomInputLevelSpotify",
+          level: "LivingRoomInputMeterSpotify"
+        },
       ],
       KitchenZoneControls: [
         {
